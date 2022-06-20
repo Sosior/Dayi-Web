@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/master.css">
+	<link rel="nav icon" href="logo.ico"  type="image/x-icon"/>
+	<script src="js/jquery.min.js"></script>
+	<title>Hello!Film World</title>
+</head>
+<body>
+    <div class="box">
+            <ul class="nav">
+	        	<div class="logo"><h1><a href="./一江春水.html">迷影星球</a></h1></div>
+            	<li><a href="./一江春水.html">一江春水</a>
+            	    <ul>
+	        	    	<li><a href="./电影节.html">电影节</a></li>
+                        <li><a href="./大师.html">电影人</a></li>
+	        			<li><a href="">电影公司</a></li>
+                        <li><a href="">电影声音</a></li>
+	        	    </ul>
+	        	</li>
+	        	<li><a href="./满树桃花.html">满树桃花</a>
+	        	    <ul>
+	        	    	<li><a href="">摄影日记</a></li>
+                        <li><a href="">视频合辑</a></li>
+                        <li><a href="">海报剧照</a></li>
+	        	    </ul>
+	        	</li>
+            	<li><a href="./如黛青山.html">如黛青山</a>
+	        		<ul>
+	        			<li><a href="">专题</a></li>
+	        		</ul>
+	        	</li>
+            </ul>
+	        <!-- 头部结束 -->
+	        <div class="king">
+                <ul>
+                    <li class="current">
+                        <a href="#">
+                            <img src="./image/冯1.webp" alt="" class="small">
+                            <img src="./image/悲喜剧匠.png" alt="" class="big">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./image/库布里克.jpg" alt="" class="small">
+                            <img src="./image/库布里克.png" alt="" class="big">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./image/周1.webp" alt="" class="small">
+                            <img src="./image/戏剧王者.png" alt="" class="big">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./image/姜1.webp" alt="" class="small">
+                            <img src="./image/惊梦骑士.png" alt="" class="big">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./image/张1.webp" alt="" class="small">
+                            <img src="./image/张艺谋.png" alt="" class="big">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./image/科恩1.webp" alt="" class="small">
+                            <img src="./image/科恩.png" alt="" class="big">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./image/王1.jpg" alt="" class="small">
+                            <img src="./image/魅力元素.png" alt="" class="big">
+                        </a>
+                    </li>
+                </ul>
+        
+            </div>
+            <!-- 中部结束 -->
+	        <div class="footer">
+                <div class="con_fl">
+                    <h1 class="p_l"></h1>
+                    <div class="p_r">
+                        <h1>浪潮汹涌 脚下为勇</h1>
+                    </div>
+                    <h1>在这里，我们学习仅有几百年的电影历史</h1>
+                    <h1>同时，时刻关注当下电影市场的起伏波动</h1>
+                   
+                </div>
+                <div class="con_fr">
+                    <h3>你可以通过以下方式联系我们</h3>
+                    <h3>邮箱:Mr.Ruhua@outlook.com</h3>
+                    <h3>电话:19806632008</h3>
+                    <h3>QQ:2087141793</h3>
+                    <h3>微信:songweizi18192021</h3>
+                </div>
+	        </div>
+	    </div>      
+	<script>
+        // $(function() {
+        //     // 鼠标经过
+        //     $(".nav>li").mouseover(function() {
+        //         // $(this) jQuery 当前元素  this不要加引号
+        //         // show() 显示元素  hide() 隐藏元素
+        //         $(this).children("ul").show();
+        //     });
+        //     // 鼠标离开
+        //     $(".nav>li").mouseout(function() {
+        //         $(this).children("ul").hide();
+        //     })
+        // })
+		    $(".nav>li").hover(function() {
+                    $(this).children("ul").slideToggle();
+                });
+            $(function() {
+            // 鼠标经过某个小li 有两步操作：
+            $(".king li").mouseenter(function() {
+                // 1.当前小li 宽度变为 224px， 同时里面的小图片淡出，大图片淡入
+                $(this).stop().animate({
+                    width: 224
+                }).find(".small").stop().fadeOut().siblings(".big").stop().fadeIn();
+                // 2.其余兄弟小li宽度变为69px， 小图片淡入， 大图片淡出
+                $(this).siblings("li").stop().animate({
+                    width: 69
+                }).find(".small").stop().fadeIn().siblings(".big").stop().fadeOut();
+            })
+
+
+
+        });
+    </script>
+	<script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/pinterest_grid.js"></script>
+    
+</body>
+
+</html>

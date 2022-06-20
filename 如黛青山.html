@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"> 
+	<link rel="stylesheet" href="./css/MyWorld_1.css">
+	<link rel="stylesheet" href="./css/green.css">
+    <link rel="nav icon" href="logo.ico"  type="image/x-icon"/>
+	<script src="js/jquery.min.js"></script>
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"> </script>
+	<title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <ul class="nav">
+    		<div class="logo"><h1><a href="./一江春水.html">迷影星球</a></h1></div>
+        	<li><a href="./一江春水.html">一江春水</a>
+        	    <ul>
+    		    	<li><a href="./电影节.html">电影节</a></li>
+                    <li><a href="./大师.html">电影人</a></li>
+    				<li><a href="">电影行业</a></li>
+                    <li><a href="">电影声音</a></li>
+    		    </ul>
+    		</li>
+    		<li><a href="./满树桃花.html">满树桃花</a>
+    		    <ul>
+    		    	<li><a href="">摄影日记</a></li>
+                        <li><a href="">视频合辑</a></li>
+                        <li><a href="">海报剧照</a></li>
+    		    </ul>
+    		</li>
+        	<li><a href="./如黛青山.html">如黛青山</a>
+    			<ul>
+    				<li><a href="">专题</a></li>
+    			</ul>
+    		</li>
+        </ul>
+    	<!-- 头部结束 -->
+        <div id="mainbody">
+            <div class="ailing">
+                <a href="https://mp.weixin.qq.com/s/_q8jtueRhkemeoTlV50Gsw">《我自己的文章》——张爱玲</a>
+            </div>
+            <ul class="lanmu">
+                <li>看这一江春水</li>
+                <li>看这满树桃花</li>    
+                <li>看这如黛青山</li>
+                <li>迎面而来是哪家女子</li>
+                <li>生得春光满面</li>
+            </ul>
+            <div class="ring">
+                <a href="#">《The Lord Of The Ring》</a>
+            </div>
+        </div>
+        <div id="main">
+            <!-- 展区 -->
+            <div class="swiper mySwiper turn">
+                <div class="poster"><a name="#Poster">Poster swiper</a></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./image/1.webp" /></div>
+                    <div class="swiper-slide"><img src="./image/2.webp" /></div>
+                    <div class="swiper-slide"><img src="./image/踏摇娘.jpg" /></div>
+                    <div class="swiper-slide"><img src="./image/3.webp" /></div>
+                    <div class="swiper-slide"><img src="./image/4.jpg" /></div>
+                    <div class="swiper-slide"><img src="./image/1.png" /></div>
+                    <div class="swiper-slide"><img src="./image/7.jpg" /></div>
+                    <div class="swiper-slide"><img src="./image/5.jpg" /></div>
+                    <div class="swiper-slide"><img src="./image/8.jpg" /></div>
+                    <div class="swiper-slide"><img src="./image/公民.bmp" /></div>
+                    <div class="swiper-slide"><img src="./image/7.jpg" /></div>
+                </div>
+            </div>
+            <!-- 111 -->
+        </div>
+        <div class="footer">
+            <div class="con_fl">
+                <h1 class="p_l"></h1>
+                <div class="p_r">
+                    <h1>浪潮汹涌 脚下为勇</h1>
+                </div>
+                <h1>在这里，我们学习仅有几百年的电影历史</h1>
+                <h1>同时，时刻关注当下电影市场的起伏波动</h1>
+               
+            </div>
+            <div class="con_fr">
+                <h3>你可以通过以下方式联系我们</h3>
+                <h3>邮箱:Mr.Ruhua@outlook.com</h3>
+                <h3>电话:19806632008</h3>
+                <h3>QQ:2087141793</h3>
+                <h3>微信:songweizi18192021</h3>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+    
+    
+        },
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+    });
+    // ！！！！！！！轮播图结束
+                $(".nav>li").hover(function() {
+                    $(this).children("ul").slideToggle();
+                });
+    </script>
+</body>
+</html>
