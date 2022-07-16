@@ -1,5 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .box {
-    width: 1525px;
     height: auto;
     background: url(../image/red.jpg);
 }

@@ -1,6 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .box {
-    width: 1525px;
-    height: auto;
     background: url(../image/red.jpg);
 }
 li {
@@ -19,7 +21,7 @@ a {
 }
 .nav .logo {
     position: absolute;
-    top: -10px;
+    top: 5px;
     left: 400px;
 }
 .nav .logo a {
@@ -34,15 +36,14 @@ a {
     /* 像素直接设为0 */
     font-size: 0;
  } 
-
 .nav>li {
-    left: 500px;
-    position: relative;
+    padding-top: 60px;
+    padding-left: 50px;
     float:left;
     width: 80px;
     height: 41px;
     text-align: center;
-    margin: 55px 10px 15px 15px;
+    
 }
 
 .nav li a {
@@ -60,9 +61,8 @@ a {
 .nav ul {
     display: none;
     position: absolute;
-    top: 41px;
-    left: -50px;
-    width: 1000px;    
+    width: 100%;
+    text-align: center;
 }
 
 .nav ul li {
