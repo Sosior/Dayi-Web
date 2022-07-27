@@ -21,7 +21,7 @@ a {
 }
 .nav .logo {
     position: absolute;
-    top: 5px;
+    top: 7px;
     left: 400px;
 }
 .nav .logo a {
@@ -45,7 +45,6 @@ a {
     float:left;
     width: 80px;
     height: 41px;
-    text-align: center;
     
 }
 
@@ -69,6 +68,7 @@ a {
 }
 
 .item01 ul li {
+    text-indent: 15%;
     background-color: #0c2b45;
     border-bottom: 1px solid #fff;
 }

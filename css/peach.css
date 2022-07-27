@@ -3,8 +3,6 @@
     padding: 0;
 }
 .box {
-    width: 1525px;
-    height: auto;
     background: url(../image/red.jpg);
 }
 li {
@@ -23,7 +21,7 @@ a {
 }
 .nav .logo {
     position: absolute;
-    top: -10px;
+    top: 7px;
     left: 400px;
 }
 .nav .logo a {
@@ -38,43 +36,44 @@ a {
     /* 像素直接设为0 */
     font-size: 0;
  } 
-
-.nav>li {
-    left: 500px;
-    position: relative;
+ .item01 {
+    margin-left: 500px;
+ }
+ .item01>li {
+    padding-top: 60px;
+    padding-left: 50px;
     float:left;
     width: 80px;
     height: 41px;
-    text-align: center;
-    margin: 55px 10px 15px 15px;
+    
 }
 
-.nav li a {
+.item01 li a {
     display: block;
     font-size: 20px;
     line-height: 41px;
     color: #fff;
 }
 /* 一级菜单鼠标经过样式 */
-.nav>li>a:hover {
+.item01>li>a:hover {
     color: #dc3735;
     background-color: #0c2b45;
 }
 /* 二级菜单 */
-.nav ul {
+.item01 ul {
     display: none;
     position: absolute;
-    top: 41px;
-    left: -50px;
-    width: 1000px;    
+    width: 100%;
+    
 }
 
-.nav ul li {
+.item01 ul li {
+    text-indent: 15%;
     background-color: #0c2b45;
     border-bottom: 1px solid #fff;
 }
 /* 二级菜单鼠标经过样式 */
-.nav ul li a:hover {
+.item01 ul li a:hover {
     color: #dc3735;
     background-color: #0c2b45;
 }
